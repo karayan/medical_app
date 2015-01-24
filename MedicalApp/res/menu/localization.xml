@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gr.forth.ics.urbanNet.ui.LocalizationActivity" >
+
+    <item
+        android:id="@+id/action_map_normal"
+        android:orderInCategory="100"
+        android:title="Map Normal View"
+        />
+    <item
+        android:id="@+id/action_map_hybrid"
+        android:orderInCategory="100"
+        android:title="Map Hybrid View"
+        />
+    <item
+        android:id="@+id/action_map_sattelite"
+        android:orderInCategory="100"
+        android:title="Map Satellite View"
+        />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        />
+
+</menu>

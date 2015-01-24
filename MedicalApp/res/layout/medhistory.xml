@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="@string/Next" />
+
+    <RadioGroup
+        android:id="@+id/radioAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/radioA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:checked="false"
+            android:tag="1"
+            android:text=""
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radioA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="2"
+            android:text=""
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/radioA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="3"
+            android:text=""
+            android:visibility="gone" />
+        <RadioButton
+            android:id="@+id/radioA4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="4"
+            android:text=""
+            android:visibility="gone" />
+         <RadioButton
+            android:id="@+id/radioA5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="5"
+            android:text=""
+            android:visibility="gone" />
+
+        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Questionnaire Medical History"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+
+    <TextView
+        android:id="@+id/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="bodyText"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/quest_mumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text=""/>
+    
+       <EditText
+    android:id="@+id/denXerw"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/radioAnswers"
+    android:hint="@string/other"
+    android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Back" />
+        
+        
+        
+   
+</RelativeLayout>

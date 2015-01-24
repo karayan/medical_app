@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK/appcompat_v7"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/achartengine-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/acra-4.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/gson-2.0.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/libGoogleAnalyticsServices.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/ormlite-android-4.40.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/ormlite-core-4.40.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/jackson-core-asl-1.8.5.jar"/>
+	<classpathentry kind="lib" path="/home/katerina/workspace/umap_libs/jackson-mapper-asl-1.8.5.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

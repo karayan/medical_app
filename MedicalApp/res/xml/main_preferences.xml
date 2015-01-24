@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+                             ">
+    <ListPreference
+        android:defaultValue="Roadmap"
+        android:dialogTitle="Map View"
+        android:entries="@array/mapViewkPreferences"
+        android:entryValues="@array/mapViewkPreferencesValues"
+        android:key="mapViewPreference"
+        android:persistent="true"
+        android:shouldDisableView="false"
+        android:title="@string/map_view_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="advancedMode"
+        android:title="@string/prefs_advanced_title" />
+
+    <ListPreference
+        android:defaultValue="Customer"
+        android:dialogTitle="Feedback"
+        android:entries="@array/feedbackPreferences"
+        android:entryValues="@array/feedbackPreferencesValues"
+        android:key="feedbackPreference"
+        android:persistent="true"
+        android:shouldDisableView="false"
+        android:title="@string/user_mode" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="autoDataUploading"
+        android:title="@string/prefs_auto_data_uploading_title" />
+
+    <Preference
+        android:key="update"
+        android:title="@string/update" />
+    <Preference
+        android:key="upload"
+        android:title="@string/upload" />
+    <Preference
+        android:key="questionnaire"
+        android:title="@string/feedback" />
+    <Preference
+        android:key="didYouKnow"
+        android:title="@string/did_you_know" />
+    <Preference
+        android:key="aboutUs"
+        android:title="@string/about" />
+
+</PreferenceScreen>

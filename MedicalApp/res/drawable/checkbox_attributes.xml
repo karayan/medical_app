@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+      <!-- <item android:state_checked="true" android:drawable="@color/checkbox_active" /> -->
+      <item android:state_checked="false" android:drawable="@color/text_color_light_blue" />
+	</selector>
+
+</animation-list>

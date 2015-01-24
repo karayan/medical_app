@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="@string/optionsSecond"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    	<Button
+        android:id="@+id/buttonLocalization"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLocal"
+         />
+    
+        <Button
+        android:id="@+id/buttonQuestionnaire"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnQ" />
+
+        <Button
+            android:id="@+id/buttonInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnI" />
+
+</LinearLayout>

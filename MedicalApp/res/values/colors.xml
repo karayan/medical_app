@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_pink">#82002B</color>
+    <color name="fuchsia">#8E1940</color>
+    <color name="lilac">#D9B2BF</color>
+    <color name="background_light_blue">#BBE2DB</color>
+    <color name="text_color_light_blue">#092F28</color>
+    <color name="background_almost_white">#F3F3F3</color>
+</resources>

@@ -1,0 +1,8 @@
+1	1.Were you smoking during this pregnancy; Please answer also considering the first days of your pregnancy.	No	Yes	I don't know_space
+2	2.Do you smoke now;	No	Yes	occasionally, num. of cigarette………../ week………………../month	I don't know goto5
+3	3.What brand of cigarettes do you smoke;	I don't know	other_space
+4	4.How many cigarettes do you smoke;	__________cigarette / week	__________cigarette / day	__________cigars / week	__________cigars / day	I don't know
+5	5.In relation to your habits before pregnancy:	you are smoking like before	you reduced smoking	 you are making efforts to stop it	I don't know
+6	6.Were there periods in your pregnancy, during which you did not smoke for at least a week;	No	yes	I don't know
+7	7.During which weeks of your pregnancy did you not smoke;	I don't know	cigarettes per week_space
+8	8.Did you use any methods to stop smoking during this pregnancy, like nicotine chewing gum or patches;	No	Yes	I don't know

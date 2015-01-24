@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right" >
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="@string/mapsKeyDebug" >
+    </com.google.android.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/lay0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#1F1F1F" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#1F1F1F" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.61"
+                    android:background="#1F1F1F"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="6dp" >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/searchInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#fff"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textAutoComplete"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <!--
+                <ImageButton
+                    android:id="@+id/favoritesButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.13"
+                    android:background="@null"
+                    android:src="@drawable/new_favorites" />
+			
+                <ImageButton
+                    android:id="@+id/graphs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.13"
+                    android:background="@null"
+                    android:src="@drawable/map_current_position" />
+                -->
+
+                <CheckBox
+                    android:id="@+id/currentPositionCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:button="@drawable/map_current_position"
+                    android:checked="false" />
+
+                <ImageButton
+                    android:id="@+id/sensorButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.13"
+                    android:background="@null"
+                    android:src="@drawable/sensor" />
+                 <ImageButton
+                    android:id="@+id/settingButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.13"
+                    android:background="@null"
+                    android:src="@drawable/settings" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/viewLayout_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.9" >
+
+                    <RadioGroup
+                        android:id="@+id/toolsRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <!-- Hexagon -->
+
+                        <RadioButton
+                            android:id="@+id/hexagonRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/map_center" />
+
+                        <!-- custom shape -->
+
+                        <RadioButton
+                            android:id="@+id/customShapeRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/map_custom_shape" />
+                    </RadioGroup>
+
+                    <ImageButton
+                        android:id="@+id/mapZoomInButton"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/btn_default_small"
+                        android:src="@drawable/zoom_in" />
+
+                    <ImageButton
+                        android:id="@+id/mapZoomOutButton"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignLeft="@+id/mapZoomInButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/mapZoomInButton"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:drawable/btn_default_small"
+                        android:src="@drawable/zoom_out" />
+
+                    <ImageButton
+                        android:id="@+id/redo"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignBaseline="@+id/undo"
+                        android:layout_alignBottom="@+id/undo"
+                        android:layout_toRightOf="@+id/undo"
+                        android:background="@android:drawable/btn_default_small"
+                        android:src="@drawable/point_redo" />
+
+                    <ImageButton
+                        android:id="@+id/undo"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignBottom="@+id/toolsRadioGroup"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/toolsRadioGroup"
+                        android:background="@android:drawable/btn_default_small"
+                        android:src="@drawable/point_undo" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.10"
+                     android:layout_marginRight="2dp"
+                      android:layout_marginLeft="2dp" >
+
+                    <Button
+                        android:id="@+id/feedbackButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#ee33B5E5"
+                        android:padding="2dp"
+                        android:text="Give score"
+                        android:textColor="#ffffff"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                    <Button
+                        android:id="@+id/searchAreaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="#ee33B5E5"
+                        android:text="Search this area"
+                         android:padding="2dp"
+                        android:textColor="#ffffff"
+                         android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewLayout_providers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.4" >
+
+                    <ImageButton
+                        android:id="@+id/clearProvidersListButton"
+                        android:layout_width="62dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="#eedddddd"
+                        android:src="@android:drawable/arrow_down_float" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="178dp"
+                    android:layout_weight="0.00"
+                    android:background="#dddddd" >
+
+                    <ListView
+                        android:id="@+id/providersList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="false" >
+                    </ListView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicalapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="gr.forth.ics.urbanNet.main.UrbanNetApp"
+        android:icon="@drawable/babycare2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.SecondActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.LoginActivity"
+            android:label="Choices" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.ErrActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.LoginActivity"
+            android:label="Input Error" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.InfoActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.SecondActivity"
+            android:label="Medical App Info" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.LocalizationActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.SecondActivity"
+            android:label="Localization" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.QuestActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.SecondActivity"
+            android:label="Categories" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.UserDetails"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.SecondActivity"
+            android:label="UserDetails Activity" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.MedHistory"
+            android:label="MedHistory Activity" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC3yMQQYA8pF4mupUfQlNOSBIuvqK9T-60" />
+
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.LoginActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.MainActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.SignupActivity"
+            android:parentActivityName="gr.forth.ics.urbanNet.ui.MainActivity"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.EnvironmentalActivity"
+            android:label="EnvironmentalActivity Activity" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.CosmeticsActivity"
+            android:label="CosmeticsActivity Activity" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.WaterActivity"
+            android:label="WaterActivity Activity" >
+        </activity>
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.LifeStyleActivity"
+            android:label="LifeStyleActivity Activity" >
+        </activity>
+		<activity 
+		    android:name="gr.forth.ics.urbanNet.ui.QuestionnaireActivity"
+		    android:parentActivityName="gr.forth.ics.urbanNet.ui.QuestActivity" >
+		</activity>
+        
+        <!-- Declaration of Activities -->
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.MapViewActivity"
+            android:label="@string/app_name" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="@string/ACTION_NEW_LOCATION_ESTIMATED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity android:name="gr.forth.ics.urbanNet.MainActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.IntroActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.QueryListTabActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.HistoryActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.FavoritesActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.BarChartsActivity" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.LineChartsActivity" />
+        
+        <activity android:name="gr.forth.ics.urbanNet.ui.TabSensorsChartsActivity" />
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.FeedbackActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.ScientFeedbackActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="gr.forth.ics.urbanNet.ui.HistogramActivity" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name="gr.forth.ics.urbanNet.ui.ServiceAlertDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- Declaration of Preference Activities -->
+        <activity
+            android:name="gr.forth.ics.urbanNet.preferences.MainPreferenceActivity"
+            android:theme="@android:style/Theme.WallpaperSettings" />
+        <activity android:name="gr.forth.ics.urbanNet.preferences.AboutUsActivity" />
+        <!-- Declaration of Receivers -->
+        <receiver android:name="gr.forth.ics.urbanNet.boot.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="gr.forth.ics.urbanNet.boot.ShutdownReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Declaration of Services -->
+        <service android:name="gr.forth.ics.urbanNet.location.LocationService" />
+        <service android:name="gr.forth.ics.urbanNet.qoe.QoEService" />
+        <service android:name="gr.forth.ics.urbanNet.network.NetworkService" />
+    </application>
+
+</manifest>

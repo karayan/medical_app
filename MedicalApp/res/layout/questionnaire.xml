@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDetails" />
+
+<Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnHistory" />
+
+<ProgressBar
+    android:id="@+id/progressBar_medical_history"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<Button
+        android:id="@+id/buttonEnviron"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEnviron" />
+
+<ProgressBar
+    android:id="@+id/progressBar_environmental"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<Button
+        android:id="@+id/buttonCosmetics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCosmetics" />
+
+<ProgressBar
+    android:id="@+id/progressBar_cosmetics"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<Button
+        android:id="@+id/buttonWater"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnWater" />
+
+<ProgressBar
+    android:id="@+id/progressBar_water"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<Button
+        android:id="@+id/buttonlife"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLife" />
+
+<ProgressBar
+    android:id="@+id/progressBar_lifestyle"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+<!-- <Button
+        android:id="@+id/buttonNutrition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnNutrition" /> -->
+
+<Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload" />
+</LinearLayout>

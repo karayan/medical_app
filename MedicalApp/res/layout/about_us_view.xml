@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="223dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:scaleType="center"
+        android:src="@drawable/logo_forth_inverted" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/aboutUsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/about_us" />
+    
+    <TextView
+        android:id="@+id/appVersionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/app_version" />
+
+    <TextView
+        android:id="@+id/uMapDescriptionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/uMapDescription" />
+
+    <TextView
+        android:id="@+id/linkTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="web"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/ics_link" />
+
+</LinearLayout>

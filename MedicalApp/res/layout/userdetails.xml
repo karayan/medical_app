@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		   
+			<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/feedbacktitle"
+		    android:textSize="10pt">
+			</TextView>
+			
+			<EditText
+		    android:id="@+id/EditTextEmail"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/email"
+		    android:inputType="textEmailAddress"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextName"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/name"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextSurname"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/Surname"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>	
+			
+			<EditText
+		    android:id="@+id/EditTextfather"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/father"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextBirth"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/birth"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextAddr"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/addr"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextTell"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/Tell"
+		    android:inputType="phone"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextMobile"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/mobile"
+		    android:inputType="phone"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<!-- <EditText
+		    android:id="@+id/EditTextnationalOrigin"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/nationalOrigin"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>-->
+			
+			<Spinner
+		    android:id="@+id/SpinnerNationality"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/nationality"
+		    android:layout_width="fill_parent">
+			</Spinner>
+			
+			<EditText
+		    android:id="@+id/EditTextWeight"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/weight"
+		    android:inputType="numberDecimal"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextWeightBeforePreg"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/weightBeforePreg"
+		    android:inputType="numberDecimal"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/EditTextChildrenSum"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/childrenSum"
+		    android:inputType="numberSigned"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<EditText
+		    android:id="@+id/Height"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/height"
+		    android:inputType="numberDecimal"
+		    android:layout_width="fill_parent">
+			</EditText>
+			
+			<Spinner
+		    android:id="@+id/SpinnerType"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/lifetype"
+		    android:layout_width="fill_parent"
+		    android:entries="@array/Maritallist">
+			</Spinner>
+			
+			<Spinner
+		    android:id="@+id/SpinnerEducation"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/education"
+		    android:layout_width="fill_parent">
+			</Spinner>
+			
+			<!--  <EditText
+		    android:id="@+id/education"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/education"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText>-->
+			
+			<Spinner
+		    android:id="@+id/SpinnerOcucupation"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/Occupation"
+		    android:layout_width="fill_parent">
+			</Spinner>
+			
+			
+		<!-- 	
+			<EditText
+		    android:id="@+id/job1"
+		    android:layout_height="wrap_content"
+		    android:hint="@string/job1"
+		    android:inputType="textPersonName"
+		    android:layout_width="fill_parent">
+			</EditText> -->
+			
+			<Button
+			    android:id="@+id/btnSave"
+			    android:layout_width="75dp"
+			    android:layout_height="wrap_content"
+			    android:text="@string/Save" />
+
+			
+			
+		</LinearLayout>
+</ScrollView>

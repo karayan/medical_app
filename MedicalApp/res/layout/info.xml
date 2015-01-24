@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+  android:id="@+id/textView1"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:text=" Implementation of an Android application (health-care oriented) 
+  that enables the users to fill in a questionnaire about their lifestyle in order to 
+  provide information that will be used by a doctor to provide medical help to them. 
+  Also, part of this application will be to estimate the user's device position. "/>  
+    
+</LinearLayout>

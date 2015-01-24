@@ -1,0 +1,30 @@
+1	1.Is the father of your child-your husband suffering from diabetes?	No	Yes	I don't know
+2	2.Have you ever had high blood glucose amounts / diabetes?	No goto4	Yes	Yes, only in conjunction with pregnancy	I don't Know
+3	3.Does/Did your mother or father suffer from diabetes?	No	Yes	I don't know
+4	4.If you have siblings, are they suffering from diabetes?	No	Yes	I don't know
+5	5.Have you ever had high blood pressure?	No goto12	Yes	Yes, only in conjunction with pregnancy	I don't know                                     
+6	6.Are you taking medication for hypertension?	No goto12	Yes	I don't know                                         
+7	7.Do you still have high blood pressure?	No	Yes	I don't know
+8	8.Does The father of the child - your husband, have hypertension?	No	Yes	I don't Know
+9	9.Does/Did your mother or father have hypertension?	No	Yes	I don't know
+10	10.If you have siblings, do they have hypertension?	No	Yes	I don't know
+11	11.Have you ever had high cholesterol / triglycerides?	No goto19	Yes	Yes, only in conjunction with pregnancy	I don't know                                   
+12	12.Do you take medication for high cholesterol / triglycerides?	No goto19	Yes	Yes, only in conjunction with pregnancy	I don't know                                    
+13	13.Do you still have high amounts of triglycerides / cholesterol?	No	Yes	I don't know
+14	14.Does The father of the child - your husband, have high ammounts of triglycerides / cholesterol?	No	Yes	I don't know
+15	15.Does/Did your father or mother have high amounts of cholesterol / triglycerides?	No	Yes	I don't know
+16	16.If you have siblings, does any of them have high amounts of cholesterol / triglyceride?	No	Yes	I don't know
+17	17.Is the father of your child overweight?	No	Yes	I don't know
+18	18.Is/Was your father or mother overweight?	No	Yes	I don't know
+19	19.If you have siblings, is any of them overweight?	No	Yes	I don't know
+20	20.Has a doctor ever diagnosed that the father of your child - your husband is suffering from allergic rhinitis?	No	Yes	I don't know
+21	21.Do you know if your father or mother had allergic rhinitis;	No	Yes	I don't know
+22	22.If you have siblings, is any of them suffering from allergic rhinitis?	No	Yes	I don't know
+23	23.Has a doctor ever diagnosed that the father of your child - your husband suffers from asthma?	No	Yes	I don't know
+24	24.Does/Did your father or mother have asthma?	No	Yes	I don't know
+25	25.If you have siblings, is any of them suffering from asthma?	No	Yes	I don't know
+26	26.Have you ever had dermatitis / eczema?	No	Yes	Yes,only in conjunction with pregnancy	I don't know                                
+27	27.Has a doctor ever diagnosed that you have dermatitis / eczema?	No	Yes	Yes, only in conjunction with pregnancy	I don't know                                  
+28	28.Has a doctor ever diagnosed that the father of your child - your husband  is suffering from eczema?	No	Yes	I don't know	
+29	29.Do you know if your father or mother have eczema?	No	Yes	I don't know
+30	30.If you have siblings, is any of them suffering from eczema?	No	Yes	I don't know

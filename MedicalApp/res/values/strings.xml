@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="hello">Hello World, umapMain!</string> -->
+    <!-- <string name="app_name">urbanNet</string> -->
+    <string name="search">Search</string>
+    <string name="query_type_alert_title">Search for best water qaulity by:</string>
+    <string name="ACTION_MONITOR_RATE_UPDATE">monitorRateUpdate</string>
+    <string name="ACTION_MONITOR_RATE_PARAMS_UPDATE">monitorRateUpdate</string>
+    <string name="crash_toast_text">The urbanNet crash. An error was logged and sent to the developer.</string>
+    <string name="crash_toast_text_Dialog">Unfortunately, urbanNet stopped unexpectedly.</string>
+    <string name="crash_dialog_title">UrbanNet has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+    <string name="OK">"OK"</string>
+    <string name="map_view_title">Map View</string>
+    <!-- <string name="action_settings">Settings</string> -->
+    <string name="app_version">1.1.1</string>
+    <string name="ACTION_NEW_LOCATION_ESTIMATED">gr.forth.ics.umap.location.ACTION_NEW_LOCATION_ESTIMATED</string>
+
+    <!-- Preference Activities -->
+    <string name="prefs_advanced_title">Advanced Mode</string>
+    <string name="prefs_advanced_summary">Define specific region for queries using polygon.</string>
+    <string name="prefs_auto_data_uploading_title">Auto Uploading</string>
+    <string name="prefs_auto_data_uploading_summary">Automatically upload the collected data to the urbanNet server.</string>
+    <string name="historywindow">History</string>
+    <string name="history_summary">Most recent queries.</string>
+    <string name="clear_history">Delete all queries.</string>
+    <string name="about_us">FORTH\n
+        Institute of Computer Science\n
+        Telecommunications and Networks Laboratory</string>
+    <string name="uMapDescription">This application is developed by the Mobile Computing Group and is part of the CoRLAB project. It is a user-centric geo-database recommendation system. It enables users with smart phones to see the water quality on some areas.</string>
+    <string name="ics_link">http://www.ics.forth.gr/mobile</string>
+    <string name="imei">Required login-pass for web interface.</string>
+    <!-- maps API keys -->
+    <string name="mapsKeyDebug">0s97Noa4dxDxAeAl459ONXsbRY0lYXNbxsrIKFg</string>
+    <string name="mapsKeyProduction">0VG511GHfi05Ha6_FF69qbW4jmQCeOffcXgrulQ</string>
+    <string name="floating_part">Floating particles</string>
+    <string name="red_color">Red color</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="sweet">Sweet</string>
+    <string name="chlorine">Chlorine</string>
+    <string name="salty">Salty</string>
+    <string name="green_color">Green Color</string>
+    <!-- <string name="other">Other</string> -->
+    <string name="send_complaints">Send complaints</string>
+    <string name="save_complaints">Save complaints</string>
+    <string name="take_picture">Take photo</string>
+    <string name="tap_water">Tap</string>
+    <string name="bottle_water">Bottle</string>
+    <string name="natural_water">Natural (Water)</string>
+    <string name="exellent">EXCELLENT</string>
+    <string name="s_mode">S mode</string>
+    <string name="did_you_know">Did you know</string>
+    <string name="info_1">2.5 billion people, half of the developing world, lack access to adequate sanitation</string>
+    <string name="info_2">Tap water qaulity checking is made once a month</string>
+    <string name="info_3">Expiration date on bootle water, is meant to be indicators of quality, not safety</string>
+    <string name="info_4">Bottled water costs 10,000 times more per gallon than tap water</string>
+    <string name="info_5">Bacteria grow best in warm and moist environments.Environment created by an unrefrigerated bottle of water</string>
+    <string name="info_6">Plastic bottles release toxic chemicals when they do decompose</string>
+    <string name="info_7">You should not refill plastic water bottles, more that 3 times</string>
+    <string name="info_8">Plastic bottle to completely degrade needs 450 years</string>
+    <string name="info_9">You can improve the water quality with your feedback, and save many people lifes and thousands euros to your government</string>
+    <string name="just_do"> Just do it </string>
+    <string name="no_sensors"> There is no any available sensor in area </string>
+    <string name="sensors_problem"> Connection with sensor lost </string>
+    <string name="socket_problem"> Connection can not establish. Check your WiFi connection </string>
+    <string name="last_12"> 12 hours </string>
+    <string name="last_week"> week </string>
+    <string name="last_month"> month </string>
+    <string name="write_file"> Write on file the measurements</string>
+    <string name="about">About</string>
+    <string name="feedback"> Feedback </string>
+    <string name="upload"> Upload </string>
+    <string name="update"> Update </string>
+    <string name="user_mode"> User mode </string>
+
+    <!-- healthcare strings -->
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Medical App</string>
+    <string name="btnClick">Login</string>
+    <string name="first_screen">Insert your mail address below:</string>
+    <string name="error_screen">Wrong e-mail address, Go back and try Again</string>
+    <string name="title_activity_error">ErrorActivity</string>
+    <string name="textErr">Wrong email, go back and try again!</string>
+    <string name="action_settings">Settings</string>
+    <string name="optionsSecond">Options</string>
+    <string name="btnLocal">Localization</string>
+    <string name="btnQ">Questionnaire</string>
+    <string name="btnI">Info</string>
+    <string name="btnDetails">Personal Details</string>
+    <string name="feedbacktitle">Fill the form with your personal info:</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="Surname">Surname</string>
+    <string name="father">Father\'s name</string>
+    <string name="birth">Date of Birth</string>
+    <string name="addr">Address</string>
+    <string name="Tell">Home telephone number</string>
+    <string name="mobile">Mobile telephone number</string>
+    <string name="nationalOrigin">Nationality</string>
+    <string name="weight">Current weight</string>
+    <string name="weightBeforePreg">Weight before pregnancy</string>
+    <string name="childrenSum">How many children do you have?</string>
+    <string name="height">Height </string>
+    <string name="type1">Married</string>
+    <string name="type2">Single</string>
+    <string name="type3">Engaged</string>
+    <string name="type4">Divorced</string>
+    <string name="type5">Widow</string>
+    <string name="type6">Other</string>
+    <string name="lifetype">Marital Status</string>
+    <string name="education">Education</string>
+    <string name="job1">Occupation before pregnancy</string>
+    <string name="btnHistory">Medical History</string>
+    <string name="Next">Next</string>
+    <string name="Back">Back</string>
+    <string name="title_activity_localization">LocalizationActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="other">other</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="button_signup">Sign Up</string>
+    <string name="button_login">Login</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="welcome">Welcome to Health Care App!</string>
+    <string name="Save">Save</string>
+    <string name="btnEnviron">Environmental</string>
+    <string name="btnCosmetics">Cosmetics</string>
+    <string name="btnWater">Water</string>
+    <string name="btnLife">Lifestyle</string>
+    <string name="btnNutrition">Nutrition</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="nationality">Nationality</string>
+    <string name="Occupation">Occupation</string>
+
+</resources>
