@@ -75,7 +75,7 @@
         android:layout_alignParentTop="true"
         android:layout_below="@id/txtTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="90dp"
         android:text="bodyText"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
@@ -110,6 +110,13 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/quest_mumber"
         android:text="@string/Save" />
-        
+
+    <ImageView
+        android:id="@+id/imageCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/water" />
    
 </RelativeLayout>

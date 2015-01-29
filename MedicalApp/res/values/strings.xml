@@ -7,9 +7,9 @@
     <string name="query_type_alert_title">Search for best water qaulity by:</string>
     <string name="ACTION_MONITOR_RATE_UPDATE">monitorRateUpdate</string>
     <string name="ACTION_MONITOR_RATE_PARAMS_UPDATE">monitorRateUpdate</string>
-    <string name="crash_toast_text">The urbanNet crash. An error was logged and sent to the developer.</string>
-    <string name="crash_toast_text_Dialog">Unfortunately, urbanNet stopped unexpectedly.</string>
-    <string name="crash_dialog_title">UrbanNet has crashed</string>
+    <string name="crash_toast_text">The mMAMEE crash. An error was logged and sent to the developer.</string>
+    <string name="crash_toast_text_Dialog">Unfortunately, mMAMEE stopped unexpectedly.</string>
+    <string name="crash_dialog_title">mMAMEE has crashed</string>
     <string name="crash_dialog_text">An unexpected error occurred forcing the
     application to stop. Please help us fix this by sending us error data,
     all you have to do is click \'OK\'.</string>
@@ -80,7 +80,7 @@
 
     <!-- healthcare strings -->
     <string name="hello">Hello World, MainActivity!</string>
-    <string name="app_name">Medical App</string>
+    <string name="app_name">mMAMEE</string>
     <string name="btnClick">Login</string>
     <string name="first_screen">Insert your mail address below:</string>
     <string name="error_screen">Wrong e-mail address, Go back and try Again</string>
@@ -121,18 +121,18 @@
     <string name="title_activity_localization">LocalizationActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="other">other</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login">Login</string>
     <string name="button_signup">Sign Up</string>
     <string name="button_login">Login</string>
-    <string name="title_activity_signup">SignupActivity</string>
-    <string name="welcome">Welcome to Health Care App!</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="welcome">Welcome to mMAMEE!</string>
     <string name="Save">Save</string>
     <string name="btnEnviron">Environmental</string>
     <string name="btnCosmetics">Cosmetics</string>
     <string name="btnWater">Water</string>
     <string name="btnLife">Lifestyle</string>
     <string name="btnNutrition">Nutrition</string>
-    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_upload">Upload</string>
     <string name="nationality">Nationality</string>
     <string name="Occupation">Occupation</string>
 

@@ -9,8 +9,10 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="315dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="90dp"
         android:text="@string/welcome"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

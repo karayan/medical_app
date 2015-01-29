@@ -419,7 +419,8 @@ public class QuestActivity extends OrmLiteBaseMapActivity<DatabaseHelper>
 								networkServiceConnection
 										.getService()
 										.uploadDataToServerWithReflectionAndThreads(
-												false);	//TODO get response to show toast
+												false); // TODO get response to
+														// show toast
 								QuestActivity.this
 										.runOnUiThread(new Runnable() {
 
@@ -505,68 +506,70 @@ public class QuestActivity extends OrmLiteBaseMapActivity<DatabaseHelper>
 		ProgressBar progress_water = (ProgressBar) findViewById(R.id.progressBar_water);
 		ProgressBar progress_lifestyle = (ProgressBar) findViewById(R.id.progressBar_lifestyle);
 
-		double[] stats = {0,0,0};
-		
-			stats = compute_percentage("BarMedical History.txt");
-		
-		buttonMed.setText("Medical History ("+(int)stats[0]+"/"+(int)stats[1]+")");
+		double[] stats = { 0, 0, 0 };
+
+		stats = compute_percentage("BarMedical History.txt");
+
+		buttonMed.setText("Medical History (" + (int) stats[0] + "/"
+				+ (int) stats[1] + ")");
 		progress_medical.setProgress((int) (stats[2]));
 		setProgressBarColor(progress_medical, stats[2]);
 
-		
-			stats = compute_percentage("BarEnvironmental.txt");
-		
-		buttonEnv.setText("Environmental ("+(int)stats[0]+"/"+(int)stats[1]+")");
+		stats = compute_percentage("BarEnvironmental.txt");
+
+		buttonEnv.setText("Environmental (" + (int) stats[0] + "/"
+				+ (int) stats[1] + ")");
 		progress_environmental.setProgress((int) stats[2]);
 		setProgressBarColor(progress_environmental, (int) stats[2]);
 
-		
-			stats = compute_percentage("BarCosmetics.txt");
-		
-		buttonCos.setText("Cosmetics ("+(int)stats[0]+"/"+(int)stats[1]+")");
+		stats = compute_percentage("BarCosmetics.txt");
+
+		buttonCos.setText("Cosmetics (" + (int) stats[0] + "/" + (int) stats[1]
+				+ ")");
 		progress_cosmetics.setProgress((int) stats[2]);
 		setProgressBarColor(progress_cosmetics, stats[2]);
 
-		
-			stats = compute_percentage("BarWater.txt");
-		
-		buttonWater.setText("Water ("+(int)stats[0]+"/"+(int)stats[1]+")");
+		stats = compute_percentage("BarWater.txt");
+
+		buttonWater.setText("Water (" + (int) stats[0] + "/" + (int) stats[1]
+				+ ")");
 		progress_water.setProgress((int) stats[2]);
 		setProgressBarColor(progress_water, (int) stats[2]);
 
-		
-			stats = compute_percentage("BarLifestyle.txt");
-		
-		buttonLife.setText("Lifestyle ("+(int)stats[0]+"/"+(int)stats[1]+")");
+		stats = compute_percentage("BarLifestyle.txt");
+
+		buttonLife.setText("Lifestyle (" + (int) stats[0] + "/"
+				+ (int) stats[1] + ")");
 		progress_lifestyle.setProgress((int) stats[2]);
 		setProgressBarColor(progress_lifestyle, (int) stats[2]);
 	}
 
 	public void setProgressBarColor(ProgressBar progress, double percentage) {
 		if (percentage == 100)
-			progress.getProgressDrawable().setColorFilter(Color.rgb(12, 63, 54),
-					Mode.SRC_IN);
+			progress.getProgressDrawable().setColorFilter(
+					Color.rgb(49, 153, 151), Mode.SRC_IN);
 		else
-			progress.getProgressDrawable().setColorFilter(Color.rgb(12, 63, 54),
-					Mode.SRC_IN);
+			progress.getProgressDrawable().setColorFilter(
+					Color.rgb(49, 153, 151), Mode.SRC_IN);
 	}
 
 	double[] compute_percentage(String filename) {
 		double percentage;
 		int n1 = 0, n2 = 0;
-		double stats[] = {0,0,0};
+		double stats[] = { 0, 0, 0 };
 		BufferedReader reader = null;
 
 		try {
-			reader = new BufferedReader(new FileReader(Environment.getExternalStorageDirectory() + "/" + filename));
+			reader = new BufferedReader(new FileReader(
+					Environment.getExternalStorageDirectory() + "/" + filename));
 			try {
 				if (reader != null) {
 					String line = reader.readLine();
-					System.out.println("Line 1 "+ line);
+					System.out.println("Line 1 " + line);
 					if (line != "")
 						n1 = Integer.parseInt(line);
 					line = reader.readLine();
-					System.out.println("Line 2 "+ line);
+					System.out.println("Line 2 " + line);
 					if (line != "")
 						n2 = Integer.parseInt(line);
 				}
@@ -577,16 +580,15 @@ public class QuestActivity extends OrmLiteBaseMapActivity<DatabaseHelper>
 			}
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
-//			e1.printStackTrace();
+			// e1.printStackTrace();
 		}
-		
-		if (n1 != 0 && n2 != 0){
-			percentage = (double)(n1 * 100) / n2;
+
+		if (n1 != 0 && n2 != 0) {
+			percentage = (double) (n1 * 100) / n2;
 			stats[0] = n1;
 			stats[1] = n2;
 			stats[2] = percentage;
-		}
-		else{
+		} else {
 			percentage = 0;
 			stats[0] = n1;
 			stats[1] = n2;

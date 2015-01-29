@@ -50,6 +50,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -83,11 +84,15 @@ public class QuestionnaireActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 	private RadioGroup radioGroup;
 	private RadioButton radioButton4;
 	private RadioButton radioButton5;
-	EditText otherText;
+	
 	private Question question;
 	private long time2;
 	private long time1;
+	
+	EditText otherText;
 	TextView quest_number;
+	ImageView imageView;
+	
 	String str1;
 	String str2;
 	String str3;
@@ -136,6 +141,7 @@ public class QuestionnaireActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 
 		this.setContentView(R.layout.questionnaire_view);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		imageView = (ImageView) findViewById(R.id.imageCategory);
 		
 		category = getIntent().getStringExtra("category");
 		System.out.println("category:::: " + category);
@@ -771,19 +777,34 @@ public class QuestionnaireActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 
 	private void loadQuestions(String category) {
 		String question_file = null;
-
+		
 		System.out.println("category in load::: " + category);
 
-		if (category.equals("Medical History"))
+		if (category.equals("Medical History")){
 			question_file = "raw/questions_medical_history";
-		else if (category.equals("Environmental"))
+			imageView.setImageResource(R.drawable.medical);
+//			imageView.setImageDrawable(getResources().getDrawable(R.drawable.medical));
+		}
+		else if (category.equals("Environmental")){
 			question_file = "raw/questions_environmental";
-		else if (category.equals("Cosmetics"))
+			imageView.setImageResource(R.drawable.city);
+//			imageView.setImageDrawable(getResources().getDrawable(R.drawable.city));
+		}
+		else if (category.equals("Cosmetics")){
 			question_file = "raw/questions_cosmetics";
-		else if (category.equals("Water"))
+			imageView.setImageResource(R.drawable.makeup);
+//			imageView.setImageDrawable(getResources().getDrawable(R.drawable.makeup));
+		}
+		else if (category.equals("Water")){
 			question_file = "raw/questions_water";
-		else if (category.equals("Lifestyle"))
+			imageView.setImageResource(R.drawable.water);
+//			imageView.setImageDrawable(getResources().getDrawable(R.drawable.water));
+		}
+		else if (category.equals("Lifestyle")){
 			question_file = "raw/questions_lifestyle";
+			imageView.setImageResource(R.drawable.cigarette);
+//			imageView.setImageDrawable(getResources().getDrawable(R.drawable.cigarette));
+		}
 		else {
 			Toast.makeText(getApplicationContext(),
 					"Oops, something went wrong! Unknown category",
